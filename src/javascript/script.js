@@ -2,10 +2,11 @@ const  mobileMenu = document.getElementById('mobile_menu')
 const  mobileBtn = document.getElementById('mobile_btn')
 const icon = mobileBtn.getElementsByTagName('i')
 
+const sections = document.querySelectorAll('section');
+const navItems = document.getElementsByClassName('nav-items')
 
 window.addEventListener('scroll', function() {
-  const sections = document.querySelectorAll('section');
-  const navItems = document.getElementsByClassName('nav-items')
+  
 
   const scrollPosition = window.scrollY-96;
 
