@@ -1,0 +1,79 @@
+#menu{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+
+#dishes{
+  with:100%;
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  margin-top:32px;
+}
+
+.dish{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border-radius:20px;
+  gap:18px;
+  width:25%;
+  padding:20px;
+  background:#fff;
+  box-shadow: 0 0 12px 4px rgba(0,0,0,.1);
+  position:relative;
+}
+
+.dish-heart{
+  position:absolute;
+  background-color:#e9a209;
+  display:flex;
+  align-items:center;
+   justify-content:center;
+   color:#fff9ea;
+   top:-10px;
+   width:70px;
+   height:70px;
+   right:-10px;
+   border-radius: 0 37.5px 0 42.5px;
+}
+
+.dish-description{
+  color:#434343;
+  text-align:center;
+
+}
+
+.dish-rate{
+  color:#e9a209;
+}
+
+.dish-price{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+@media screen and (max-width:1170px){
+  #dishes{
+    flex-wrap:wrap;
+    justify:center;
+  }
+  .dish{
+    width:calc(50% - 12px)
+  }
+  
+}
+
+@media screen and (max-width:620px){
+  #menu .section-subtitle{
+    text-align:center;
+  }
+  
+  .dish{
+    width:100% 
+  }
+}
